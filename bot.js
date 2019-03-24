@@ -8,10 +8,7 @@ let tchannels  = [];
 let current    = 0;
 
 
-client.on('ready', () => {
-  client.user.setActivity("Alpha The BeST", { type: "PLAYING"})
-  console.log(`Logged in as ${client.user.tag}!`);
-}); 
+
 client.on('message',async message => {
     const emojis   = { yes: `${client.guilds.find(r => r.id === '524287298871754777').emojis.find(e => e.name === 'Yes')}`, wrong: `${hero.guilds.find(r => r.id === '524287298871754777').emojis.find(e => e.name === 'Wrong')}` };
     if(message.author.bot || message.channel.type === 'dm') return;
