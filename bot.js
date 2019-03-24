@@ -7,7 +7,6 @@ let mtickets   = true;
 let tchannels  = [];
 let current    = 0;
 
-client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => {
   client.user.setActivity("Alpha The BeST", { type: "PLAYING"})
